@@ -1,0 +1,228 @@
+/* ===================================
+           RESET E CONFIGURAÇÕES GLOBAIS
+        =================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* ===================================
+           CONTAINER PRINCIPAL
+        =================================== */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        /* ===================================
+           CABEÇALHO
+        =================================== */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header__title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .header__subtitle {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        /* ===================================
+           SEÇÃO DO FORMULÁRIO
+        =================================== */
+        .form-section {
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group__label {
+            display: block;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .form-group__input,
+        .form-group__select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group__input:focus,
+        .form-group__select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group__input::placeholder {
+            color: #999999;
+        }
+
+        /* ===================================
+           BOTÃO DE CÁLCULO
+        =================================== */
+        .btn-calculate {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-calculate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-calculate:active {
+            transform: translateY(0);
+        }
+
+        /* ===================================
+           CAIXA DE INFORMAÇÕES
+        =================================== */
+        .info-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .info-box__text {
+            color: #1565c0;
+            font-size: 13px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ===================================
+           SEÇÃO DE RESULTADOS
+        =================================== */
+        .results {
+            display: none;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .results--show {
+            display: block;
+        }
+
+        .result-section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-section__title {
+            color: #667eea;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .result-section__subtitle {
+            color: #666666;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        /* ===================================
+           ITENS DE MATERIAL
+        =================================== */
+        .material-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .material-item:last-child {
+            border-bottom: none;
+        }
+
+        .material-item__name {
+            font-weight: 500;
+            color: #333333;
+        }
+
+        .material-item__qty {
+            font-weight: 600;
+            color: #667eea;
+            text-align: right;
+        }
+
+        /* ===================================
+           RESPONSIVIDADE
+        =================================== */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header__title {
+                font-size: 22px;
+            }
+
+            .form-section,
+            .results {
+                padding: 20px;
+            }
+
+            .material-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+
+            .material-item__qty {
+                text-align: left;
+            }
+        }
+
+        /* ===================================
+           UTILITÁRIOS
+        =================================== */
+        .hidden {
+            display: none;
+        }

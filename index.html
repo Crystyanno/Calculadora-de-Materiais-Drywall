@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Drywall - Knauf</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/Js/script.js" defer></script>
+</head>
+<body>
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container">
+        
+        <!-- CABEÇALHO -->
+        <header class="header">
+            <h1 class="header__title">🏗️ Calculadora de Materiais Drywall</h1>
+            <p class="header__subtitle">Baseado no Manual Técnico Knauf</p>
+        </header>
+
+        <!-- SEÇÃO DO FORMULÁRIO -->
+        <section class="form-section">
+            <form id="calcForm">
+                
+                <!-- Tipo de Sistema -->
+                <div class="form-group">
+                    <label for="systemType" class="form-group__label">Tipo de Sistema:</label>
+                    <select id="systemType" class="form-group__select" required>
+                        <option value="">Selecione...</option>
+                        <option value="parede">Parede</option>
+                        <option value="forro">Forro</option>
+                        <option value="ambos">Ambos (Parede + Forro)</option>
+                    </select>
+                </div>
+
+                <!-- Altura do Pé-direito (condicional) -->
+                <div id="heightGroup" class="form-group hidden">
+                    <label for="height" class="form-group__label">Altura do Pé-direito (metros):</label>
+                    <input 
+                        type="number" 
+                        id="height" 
+                        class="form-group__input"
+                        step="0.01" 
+                        min="2" 
+                        max="6" 
+                        placeholder="Ex: 2.80">
+                </div>
+
+                <!-- Área -->
+                <div class="form-group">
+                    <label for="area" class="form-group__label">Área (m²):</label>
+                    <input 
+                        type="number" 
+                        id="area" 
+                        class="form-group__input"
+                        step="0.01" 
+                        min="1" 
+                        required 
+                        placeholder="Ex: 30">
+                </div>
+
+                <!-- Tipo de Placa -->
+                <div class="form-group">
+                    <label for="plateType" class="form-group__label">Tipo de Placa:</label>
+                    <select id="plateType" class="form-group__select" required>
+                        <option value="">Selecione...</option>
+                        <option value="1.8">1,20 x 1,80 m (2,16 m²)</option>
+                        <option value="2.4">1,20 x 2,40 m (2,88 m²)</option>
+                    </select>
+                </div>
+
+                <!-- Botão Calcular -->
+                <button type="button" class="btn-calculate" onclick="calcular()">
+                    Calcular Materiais
+                </button>
+            </form>
+
+            <!-- Caixa de Informações -->
+            <div class="info-box">
+                <p class="info-box__text">
+                    <strong>📌 Nota:</strong> O cálculo já inclui automaticamente 1 m² de sobra nas placas. 
+                    Todos os valores são arredondados para cima conforme normas técnicas.
+                </p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE RESULTADOS -->
+        <section id="results" class="results"></section>
+    </div>
+
+    
+   
+</body>
+</html>
