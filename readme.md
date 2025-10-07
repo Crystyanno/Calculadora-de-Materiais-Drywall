@@ -440,7 +440,7 @@ copies or substantial portions of the Software.
 
 ## 👨‍💻 Autor
 
-**Desenvolvedor**: Calculadora Drywall Team
+**Desenvolvedor**: Crystyanno Souza
 
 ---
 
@@ -448,9 +448,7 @@ copies or substantial portions of the Software.
 
 Para dúvidas, sugestões ou reportar bugs:
 
-- 📧 Email: suporte@calculadoradrywall.com
-- 🐛 Issues: [GitHub Issues](https://github.com/usuario/calculadora-drywall/issues)
-- 📖 Wiki: [Documentação Completa](https://github.com/usuario/calculadora-drywall/wiki)
+- 📧 Email: crystyanno.alves@gmail.com
 
 ---
 
@@ -459,7 +457,6 @@ Para dúvidas, sugestões ou reportar bugs:
 - **Knauf** - Manual Técnico de referência
 - **Trevo** - Validação dos cálculos
 - Comunidade de desenvolvimento web
-- Profissionais da construção civil que testaram e validaram a ferramenta
 
 ---
 
@@ -474,7 +471,5 @@ Para dúvidas, sugestões ou reportar bugs:
 <div align="center">
 
 **Feito com ❤️ para a comunidade da construção civil**
-
-[⬆ Voltar ao topo](#-calculadora-de-materiais-drywall---knauf)
 
 </div>
